@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://wwww.thymeleaf.org">
+
+<body>
+<h1>Starship Info</h1>
+
+<ul th:each="starShip: ${starShips}">
+
+<li th:text="${starShip.name}">Name</li>
+<li th:text="${starShip.description}">Price</li>
+<li th:text="${starShip.fuelCapacity}">Fuel Capacity</li>
+<li><a th:href="@{'/starships/show/' + ${starShip.id}}" th:text="'Show'">Link to index</a>
+</li>
+</ul>
+</body>
+</html>

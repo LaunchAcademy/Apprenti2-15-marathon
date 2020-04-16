@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://wwww.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Add a New Starship</title>
+</head>
+<body>
+
+<form action="#" method="POST" th:action="@{/starships}" th:object="${starShip}">
+
+  <label th:for="name">Name</label>
+  <input type="text" th:field="${starShip.name}" />
+
+  <label th:for="description">Description</label>
+  <input type="text" th:field="${starShip.description}" />
+
+  <label th:for="fuelCapacity"> Fuel Capacity</label>
+  <input type="text" th:field="${starShip.fuelCapacity}" />
+
+  <input type="submit" value="Add StarShip"/>
+
+</form>
+</body>
+</html>

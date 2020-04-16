@@ -1,0 +1,11 @@
+.low-capacity {
+  color: red;
+}
+
+.average-capacity {
+  color: yellow;
+}
+
+.high-capacity {
+  color: green;
+}

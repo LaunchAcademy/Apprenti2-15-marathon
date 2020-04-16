@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://wwww.thymeleaf.org">
+<head>
+  <link th:href="@{/css/main.css}" rel="stylesheet">
+</head>
+<body>
+<h1>Starship Info</h1>
+
+<p th:text="${starShip.name}"></p>
+<p th:text="${starShip.description}"></p>
+<p th:text="${starShip.fuelCapacity}" th:class="${fuelCss}"></p>
+<a th:href="@{/starships}" th:text="'Index'">Link to index</a>
+</body>
+</html>
